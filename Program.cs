@@ -13,6 +13,10 @@ namespace Ch04Ex06
             double realCoord, imagCoord;
             double realTemp, imagTemp, realTemp2, arg;
             int iterations;
+
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
             for (imagCoord = 1.2; imagCoord >= -1.2; imagCoord -= 0.05)
             {
                 for (realCoord = -0.6; realCoord <= 1.77; realCoord += 0.03)
@@ -45,6 +49,7 @@ namespace Ch04Ex06
                             Console.Write("@");
                             break;
                     }
+                    System.Threading.Thread.Sleep(50);
                 }
                 Console.Write("\n");
             }
